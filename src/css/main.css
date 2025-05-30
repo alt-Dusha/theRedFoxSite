@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* All settings */
+body, html{
+    font-family: Inter;
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Header */
+header{
+    display: inline-flex;
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 42px;
+    position: sticky;
+    top: 42px;
+    z-index: 1;
+}
+header ul{
+    height: 69px;
+    display: inline-flex;
+    list-style: none;
+    margin: 0px;
+    padding-inline: 84px;
+    background-image: url(/src/Image/Header/BackGround.svg);
+    background-repeat: no-repeat;
+}
+header ul li{
+    padding-top: 16px;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    padding-inline: 70px;
+}
+header img{
+    display: inline-flex;
+    margin-inline: 25px;
+}
+/* Page 1 */
+.Page--1{
+    max-width: 1920px;
+    height: 1080px;
+    margin-top: -69px;
+    background-image: url("/src/Image/Page1/BackGround.png");
+    background-repeat: no-repeat;
+}
+.Hero{
+    margin-inline: 507px;
+    padding-top: 325px;
+    max-width: 907px;
+}
+
+.Hero t{
+    font-size: 100px;
+    color: #57270E;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Page--1 div button{
+    color: black;
+    background-color: #FFCAAD;
+    border-radius: 30px;
+    border-width: 0px;
+    font-size: 30px;
+    width: 222px;
+    height: 68px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Page--1 div button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.Page--1 div{
+    margin-left: auto;
+    margin-right: auto;
+}
+.Page--1 div:not(.Hero){
+    width:max-content;
+}
+
+
+.Page--2{
+    width: auto;
+    height: 1000px;
+    background-image: url(/src/Image/Page2/BackGround.svg);
+}
+.Header--2 h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    width: 483px;
+    height: 73px;
+    padding-top: 100px;
+    margin-top: 0px;
+    color: #57270E;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Header--2{
+    width: initial;
+}
+
+
+/* Hero 2 */
+.Hero--2{
+    width: 1239px;
+    height: 601px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Hero--2 img{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+
+
+.H1{
+    display: inline-block;
+    position: absolute;
+    margin-left: 197px;  
+    width: 464px;
+    height: 601px;
+}
+
+.H{
+    display: flex;
+    position: relative;
+    background-image: url(/src/Image/Page2/BackgroundIfo.svg);
+    background-repeat: no-repeat;
+    height: 259px;
+}
+.x{
+    margin-top: 83px;
+}
+
+.list{
+    margin-top: 40px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+.list li{
+    width: auto;
+}
+
+.Page--3{
+    width: 1920px;
+    height: 1080px;
+}
+
+.Header--3 h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    width: 563px;
+    height: 73px;
+    padding-top: 70px;
+    margin-top: 0px;
+    color: #57270E;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.Hero--3{
+    width: 1615px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+}
