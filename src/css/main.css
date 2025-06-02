@@ -10,6 +10,9 @@ body, html{
 ::-webkit-scrollbar {
   width: 0;
 }
+button:active {
+    transform: scale(0.95);
+}
 
 /* Header */
 header{
@@ -18,7 +21,7 @@ header{
     font-weight: 300;
     margin-top: 42px;
     position: sticky;
-    top: 42px;
+    top: 0px;
     z-index: 1;
 }
 header ul{
@@ -56,7 +59,7 @@ header img{
     max-width: 907px;
 }
 
-.Hero t{
+.Hero p{
     font-size: 100px;
     color: #57270E;
     font-weight: bold;
@@ -133,7 +136,7 @@ header img{
 .H{
     display: flex;
     position: relative;
-    background-image: url(/src/Image/Page2/BackgroundIfo.svg);
+    background-image: url(/src/Image/Page2/BackgroundInfo.svg);
     background-repeat: no-repeat;
     height: 259px;
 }
@@ -153,7 +156,7 @@ header img{
 }
 
 .Page--3{
-    width: 1920px;
+    max-width: 1920px;
     height: 1080px;
 }
 
@@ -175,4 +178,83 @@ header img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 130px;
+    display: flex;
+    justify-content: space-between
+}
+
+.Hero--3-1{
+    background-image: url(/src/Image/Page3/BackgroundInfo.svg);
+    background-repeat: no-repeat;
+    width: 587px;
+    height: 242px;
+}
+
+.Hero--3 p{
+    font-size: 28px;
+    width: 508px;
+    margin-inline: auto;
+}
+
+.map{
+    background-image: url(/src/Image/Page3/Map.svg);
+    background-repeat: no-repeat;
+    width: 942px;
+    height: 478px;
+}
+
+/* Footer */
+.Footer{
+    height: 136px;
+    max-width: 1920px;
+    background-image: url(/src/Image/Footer/BackGround.svg);
+}
+
+.Footer-1{
+    padding-top: 37px;
+    padding-left: 123px;
+    padding-right: 163px;
+    display: flex;
+    justify-content: space-between
+}
+
+.Footer-3{
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vk{
+    background-image: url(/src/Icons/vk.svg);
+    width: 68px;
+    height: 44px;
+}
+
+.dzen{
+    background-image: url(/src/Icons/dzen.svg);
+    width: 59px;
+    height: 56px;
+}
+
+.tg{
+    background-image: url(/src/Icons/tg.svg);
+    width: 64px;
+    height: 53px;
+}
+
+.logo2{
+    background-image: url(/src/Icons/logo2.svg);
+    width: 340px;
+    height: 72px;
+}
+
+.btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
