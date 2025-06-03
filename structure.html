@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="src/css/second.css">
+    <link rel="icon" type="image/x-icon" href="src/Icons/logo.svg">
+    <title>The red Fox</title>
+</head>
+<body>
+    <header>
+                <button onclick="window.location.href=' index.html'"
+                class="btn" src="src/Icons/logo.svg"></button>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="structure.html">Строение</a></li>
+                    <li><a href="friends.html">Друзья и враги</a></li>
+                </ul>
+    </header>
+
+    <div class="Page--1">
+        <h1>Строение</h1>
+        <div class="Hero--1">
+            <div class="Hero--1--1">
+                <img src="src/Image/structure/Page1/fox.svg">
+                <div>
+                    <p>Позвоночный столб подразделяется на шейный, грудной, поясничный, крестцовый и хвостовой отделы. Череп плоский, вытянут в длину, черепная коробка небольшая</p>
+                </div>
+            </div>
+            <div class="Hero--1--2">
+                <div>
+                    <p>В среднем длина тела — 60-90 см,<br>воста — 30-60 см. По длине хвост<br>оставляет более половины тела.<br>Вес самок составляет 5 - 8 кг,<br>самцов — 6-10 кг</p>
+                </div>
+                <img src="src/Image/structure/Page1/scul.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="Page--2">
+        <h1>Размножение</h1>
+        <div class="Hero--2">
+            <div class="carusel">
+                <button class="left btn"></button>
+                <img id="carusel-image" src="/src/Image/structure/Page2/art1.svg">
+                <button class="right btn"></button>
+            </div>                
+            <p id="carusel-text">Лисицы моногамны. Они образуют устойчивые пары на несколько лет. Чаще всего с самкой спаривается один и тот же самец, живущий рядом</p>
+        </div>
+    </div>
+
+    <div class="Page--3">
+        <h1>Питание</h1>
+        <div class="Hero--3">
+            <p>Лисица — всеядное животное. Её рацион зависит от места обитания. Основу питания составляют грызуны. Также лисица ест зайцев и птиц, в основном мелких воробьиных, куриных, а так же рыбу</p>
+        </div>
+    </div>
+    
+    <div class="Footer">
+        <div class="Footer-1">
+            <button onclick="window.location.href=' https://www.vhutein.ru/'" class="btn logo2"></button>
+            <div class="Footer-3">
+                <button onclick="window.location.href=' https://vk.com/vhutein'" class="btn vk"></button>
+                <button onclick="window.location.href=' https://dzen.ru/id/5ed76fc12625bc1747b150ba'" class="btn dzen"></button>
+                <button onclick="window.location.href=' https://web.telegram.org/k/#@vhutein'" class="btn tg"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+    const slides = [
+        {
+            image: '/src/Image/structure/Page2/art1.svg',
+            text: 'Лисицы моногамны. Они образуют устойчивые пары на несколько лет. Чаще всего с самкой спаривается один и тот же самец, живущий рядом'
+        },
+        {
+            image: '/src/Image/structure/Page2/art2.svg',
+            text: 'Беременность длится около 52 дней, после чего самка рожает от 4 до 6 щенков в специально вырытой норе. Нора обычно располагается в укромном месте, например, на склоне оврага или под корнями дерева.'
+        }
+    ];
+
+    let currentIndex = 0;
+
+    const imgElement = document.getElementById('carusel-image');
+    const textElement = document.getElementById('carusel-text');
+    const leftBtn = document.querySelector('.left');
+    const rightBtn = document.querySelector('.right');
+
+    function updateSlide(index) {
+        imgElement.src = slides[index].image;
+        textElement.textContent = slides[index].text;
+    }
+
+    leftBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlide(currentIndex);
+    });
+
+    rightBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlide(currentIndex);
+    });
+</script>
+</body>
+</html>

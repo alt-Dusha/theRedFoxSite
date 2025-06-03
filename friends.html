@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="src/css/third.css">
+    <link rel="icon" type="image/x-icon" href="src/Icons/logo.svg">
+    <title>The red Fox</title>
+</head>
+<body>
+    <header>
+                <button onclick="window.location.href=' index.html'"
+                class="btn" src="src/Icons/logo.svg"></button>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="structure.html">Строение</a></li>
+                    <li><a href="friends.html">Друзья и враги</a></li>
+                </ul>
+    </header>
+    <div class="Page--1">
+    <h1>Друзья и враги</h1>
+    <div class="Hero--1">
+        <div class="Hero--1--content">
+            <div class="Hero--1--1">
+                <p>
+                    Основными врагами считаются другие хищники, превосходящие лису по размерам. 
+                    К ним относятся: волки, медведи и рыси
+                </p>
+            </div>
+            <img id="carusel-1" src="src/Image/friends/Page1/art2.svg">
+        </div>
+    </div>
+</div>
+    <div class="Page--2">
+        <h1>Особенности</h1>
+        <div class="Hero--2">
+            <div>
+                <div class="img--1">
+                    <img src="src/Image/friends/Page2/stick.svg">
+                </div>
+                <p>Умеет планировать действия, использовать<br>окружение для охоты и маскировки</p>
+            </div>
+            <div>
+                <div class="img--1">
+                    <img src="src/Image/friends/Page2/apple.svg">
+                </div>
+                <p>Ест всё: грызунов, птиц, яйца, насекомых, ягоды,<br>фрукты, падаль</p>
+            </div>
+            <div>
+                <div class="img--1">
+                    <img src="src/Image/friends/Page2/eye.svg">
+                </div>
+                <p>Вертикально ориентированные зрачки. Это<br>позволяет видеть при тусклом свете, как у кошек</p>
+            </div>
+        </div>
+    </div>
+    <div class="Page--3">
+        <h1>след в искусстве</h1>
+        <div class="Hero--3">
+            <div class="Row">
+                <div class="center">
+                    <button class="left btn"></button>
+                    <img src="src/Image/friends/Page3/c1/art1.svg">
+                    <button class="right btn"></button>
+                </div>
+                <div class="Row--content">
+                    <p>«Лиса и заяц», «Кот, петух, и лиса», «Кузьма Скоробогатый»</p>
+                </div>
+            </div>
+
+            <div class="Row">
+                <div class="center">
+                    <button class="left btn"></button>
+                    <img src="src/Image/friends/Page3/c2/art1.svg">
+                    <button class="right btn"></button>
+                </div>
+                <div class="Row--content">
+                    <p>«Бесподобный мистер Фокс», «Лис и пёс», «Зверополис», «Лисёнок Вук», «Хьюго из джунглей»</p>
+                </div>
+            </div>
+
+            <div class="Row">
+                <div class="center">
+                    <button class="left btn"></button>
+                    <img src="src/Image/friends/Page3/c3/art1.svg">
+                    <button class="right btn"></button>
+                </div>
+                <div class="Row--content">
+                    <p>Китцуне в мифологии Японии, картины с изображением лисы, знаки и древние символы с упоминанием лисицы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Page--4">
+        <h1>Польза и вред</h1>
+        <div class="Hero--4">
+            <div class="content">
+                <h2>польза</h2>
+                <div class="d">
+<ul>
+                    <li>Регуляция численности грызунов</li>
+                    <li>Санитар природы</li>
+                    <li>Объект для наблюдений и научных исследований</li>
+                    <li>Объект культурного и эстетического интереса</li>
+                </ul>
+                </div>
+                
+            </div>
+            <div class="content last">
+                <h2>вред</h2>
+                <div class="d">
+<ul>
+                    <li>Переносчик болезней</li>
+                    <li>Угроза домашним животным</li>
+                    <li>Конкуренция с охотничьими животными</li>
+                    <li>Повреждение угодий</li>
+                </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="Footer-1">
+            <button onclick="window.location.href=' https://www.vhutein.ru/'" class="btn logo2"></button>
+            <div class="Footer-3">
+                <button onclick="window.location.href=' https://vk.com/vhutein'" class="btn vk"></button>
+                <button onclick="window.location.href=' https://dzen.ru/id/5ed76fc12625bc1747b150ba'" class="btn dzen"></button>
+                <button onclick="window.location.href=' https://web.telegram.org/k/#@vhutein'" class="btn tg"></button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    const images = [
+        'src/Image/friends/Page1/art1.svg',
+        'src/Image/friends/Page1/art2.svg',
+        'src/Image/friends/Page1/art3.svg'
+    ];
+
+    let currentIndex = 1; // начинается с art2
+
+    const imgElement = document.getElementById('carusel-1');
+
+    imgElement.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        imgElement.src = images[currentIndex];
+    });
+</script>
+<script>
+    const carousels = [
+        {
+            folder: 'c1',
+            element: null,
+            currentIndex: 0,
+            images: ['art1.svg', 'art2.svg']
+        },
+        {
+            folder: 'c2',
+            element: null,
+            currentIndex: 0,
+            images: ['art1.svg', 'art2.svg']
+        },
+        {
+            folder: 'c3',
+            element: null,
+            currentIndex: 0,
+            images: ['art1.svg', 'art2.svg']
+        }
+    ];
+
+    // Находим все блоки .Row
+    const rows = document.querySelectorAll('.Row');
+
+    rows.forEach((row, i) => {
+        const img = row.querySelector('img');
+        const leftBtn = row.querySelector('.left');
+        const rightBtn = row.querySelector('.right');
+
+        carousels[i].element = img;
+
+        function updateCarousel(index) {
+            const folder = carousels[i].folder;
+            const fileName = carousels[i].images[index];
+            img.src = `src/Image/friends/Page3/${folder}/${fileName}`;
+        }
+
+        leftBtn.addEventListener('click', () => {
+            carousels[i].currentIndex = (carousels[i].currentIndex - 1 + carousels[i].images.length) % carousels[i].images.length;
+            updateCarousel(carousels[i].currentIndex);
+        });
+
+        rightBtn.addEventListener('click', () => {
+            carousels[i].currentIndex = (carousels[i].currentIndex + 1) % carousels[i].images.length;
+            updateCarousel(carousels[i].currentIndex);
+        });
+    });
+</script>
+
+</body>
+</html>

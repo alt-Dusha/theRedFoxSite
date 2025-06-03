@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* All settings */
 body, html{
@@ -13,12 +14,17 @@ body, html{
 button:active {
     transform: scale(0.95);
 }
+p{
+    font-family: Montserrat;
+}
 
 /* Header */
 header{
-    display: inline-flex;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-between;
     font-size: 27px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 42px;
     position: sticky;
     top: 0px;
@@ -41,9 +47,16 @@ header ul li a{
     text-decoration: none;
     padding-inline: 70px;
 }
-header img{
+header button{
+    background-image: url(/src/Icons/logo.svg);
     display: inline-flex;
     margin-inline: 25px;
+    width: 72px;
+    height: 60px;
+}
+h1{
+    font-size: 60px;
+    font-family: Inter;
 }
 /* Page 1 */
 .Page--1{
@@ -54,18 +67,20 @@ header img{
     background-repeat: no-repeat;
 }
 .Hero{
+    margin-top: -200px;
     margin-inline: 507px;
     padding-top: 325px;
     max-width: 907px;
 }
 
-.Hero p{
+.Hero h1{
     font-size: 100px;
     color: #57270E;
     font-weight: bold;
     text-transform: uppercase;
 }
 .Page--1 div button{
+    font-family: Montserrat;
     color: black;
     background-color: #FFCAAD;
     border-radius: 30px;
@@ -96,7 +111,6 @@ header img{
     background-image: url(/src/Image/Page2/BackGround.svg);
 }
 .Header--2 h1{
-    font-size: 60px;
     text-transform: uppercase;
     width: 483px;
     height: 73px;
@@ -161,7 +175,6 @@ header img{
 }
 
 .Header--3 h1{
-    font-size: 60px;
     text-transform: uppercase;
     width: 563px;
     height: 73px;
@@ -196,11 +209,42 @@ header img{
 }
 
 .map{
+    position: relative;
     background-image: url(/src/Image/Page3/Map.svg);
     background-repeat: no-repeat;
     width: 942px;
     height: 478px;
 }
+
+.img-1{
+    position: absolute;
+    width: 223px;
+    height: 183px;
+    background-image: url(/src/Image/Page3/btn1.svg);
+    top: 17px;
+    left: 24px;
+}
+
+.img-2{
+    position: absolute;
+    width: 493px;
+    height: 258px;
+    background-image: url(/src/Image/Page3/btn2.svg);
+    top: 8px;
+    left: 432px;
+}
+
+.img-3{
+    position: absolute;
+    width: 142px;
+    height: 98px;
+    background-image: url(/src/Image/Page3/btn3.svg);
+    top: 282px;
+    left: 735px;
+}
+
+
+
 
 /* Footer */
 .Footer{
@@ -212,7 +256,7 @@ header img{
 .Footer-1{
     padding-top: 37px;
     padding-left: 123px;
-    padding-right: 163px;
+    padding-right: 163px;   
     display: flex;
     justify-content: space-between
 }

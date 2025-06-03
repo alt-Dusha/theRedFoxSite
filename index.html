@@ -11,23 +11,22 @@
     <body>
         <!-- Header -->
         <header>
-                <img src="src/Icons/logo.svg">
+                <button onclick="window.location.href=' index.html'"
+                class="btn" src="src/Icons/logo.svg"></button>
                 <ul>
-                    <li><a href="#">Строение</a></li>
-                    <li><a href="#">Друзья и враги</a></li>
-                    <li><a href="#">След в искусстве</a></li>
-                    <li><a href="#">Польза и вред</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="structure.html">Строение</a></li>
+                    <li><a href="friends.html">Друзья и враги</a></li>
                 </ul>
         </header>
         
         <!-- Page 1 -->
         <div class="Page--1">
             <div class="Hero">
-                <p>Если у тебя нет лисы, значит у кого-то их две</p>
+                <h1>Если у тебя нет лисы, значит у кого-то их две</h1>
             </div>
             <div>
-                <button>Смотреть!</button>
+                <button id="scroll-down-btn">Смотреть!</button>
             </div>
         </div>
         
@@ -67,7 +66,15 @@
             </div>
             <div class="Hero--3">
                 <div class="map">
-
+                    <button title="Америка"
+                    onclick="window.location.href=' https://yandex.ru/search/?text=лисы+в+америке+&lr=2&clid=11528186'"
+                    class="btn img-1"></button>
+                    <button title="Вся территория Европы и Азии"
+                    onclick="window.location.href=' https://yandex.ru/search/?text=лисы+в+европе+и+азии+&lr=2&clid=11528186'"
+                    class="btn img-2"></button>
+                    <button title="Австралия"
+                    onclick="window.location.href=' https://yandex.ru/search/?clid=11528186&text=лисы+в+австралии&l10n=ru&lr=2'"
+                    class="btn img-3"></button>
                 </div>
                 <div class="Hero--3-1">
                     <p>Лисица заселяет практически все природные зоны: леса, тундру, степь, засушливые области.<br>Нет её только в арктических пустынях крайнего севера</p>
@@ -85,5 +92,14 @@
                 </div>
             </div>
         </div>
+        <script>
+document.getElementById('scroll-down-btn').addEventListener('click', () => {
+    window.scrollBy({
+        top: 900,
+        left: 0,
+        behavior: 'smooth' // плавная прокрутка
+    });
+});
+</script>
     </body>
 </html>

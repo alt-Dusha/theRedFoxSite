@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* All settings */
+body, html{
+    font-family: Inter;
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+button:active {
+    transform: scale(0.95);
+}
+h1{
+    font-family: Inter;
+    font-size: 60px;
+    color: #57270E;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+p{
+    font-family: Montserrat;
+    font-size: 28px;
+}
+h2{
+    color: #873D15;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Page 1 */
+.Page--1{
+    margin-top: -115px;
+    height: 1070px;
+    background-image: url(/src/Image/friends/Page1/BackGround.svg);
+}
+.Page--1 h1{
+    padding-top: 191px;
+}
+.Hero--1--content {
+    display: flex;
+    align-items: center;
+    gap: 158px;
+    margin-top: 80px;
+    margin-inline: 58px;
+}
+.Hero--1 img {
+    width: 757px;
+    height: 505px;
+    cursor: pointer;
+}
+.Hero--1--1 {
+    background-image: url(/src/Image/friends/Page1/BackGroundInfo.svg);
+    width: 778px;
+    height: 153px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Hero--1 p {
+    width: 721px;
+    margin: 0;
+}
+.Hero--1 img{
+    width: 757px;
+    height: 505px;
+}
+
+/* Page 2 */
+.Page--2{
+    height: 990px;
+    background-image: url(/src/Image/friends/Page2/BackGround.svg);
+}
+.Page--2 h1{
+    padding-top: 46px;
+}
+.Hero--2{
+    padding-left: 130px;
+    padding-top: 132px;
+    width: 965px;
+}
+.Hero--2 div:not(.img--1){
+    display: inline-flex;
+    gap: 60px;
+}
+.img--1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Hero--2 p{
+    height: 74px;
+}
+.Hero--2 img{
+    background-repeat: no-repeat;
+    width: 86px;
+    height: 74px;
+}
+
+/* Page 3 */
+.Page--3{
+    height: 1113px;
+}
+.Hero--3{
+    width: 1720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 810px;
+}
+.left{
+    background-image: url(/src/Image/structure/Page2/Left.svg);
+    width: 62px;
+    height: 62px;
+}
+.right{
+    background-image: url(/src/Image/structure/Page2/Right.svg);
+    width: 62px;
+    height: 62px;
+    margin-left: 10px;
+}
+.Row{
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.Row--content{
+    padding-left: 100px;
+    width: 850px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page 4 */
+.Page--4{
+    height: 990px;
+    background-image: url(/src/Image/friends/Page4/BackGround.svg);
+}
+.Page--4 h1{
+    padding-top: 15px;
+}
+.content{
+    padding-left: 241px;
+    display: inline-block;
+    width: 800px;
+    height: 360px;
+}
+.content ul{
+    list-style-image: url('/src/Image/friends/Page4/marker.svg');
+}
+.content ul li{
+    padding-left: 20px;
+    font-size: 28px;
+    padding-block: 16px;
+}
+.last{
+    margin-top: 180px;
+}
+.d{
+    margin-left: 45px;
+}
+
+
+/* Header */
+header{
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-between;
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 42px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+header ul{
+    height: 69px;
+    display: inline-flex;
+    list-style: none;
+    margin: 0px;
+    padding-inline: 84px;
+    background-image: url(/src/Image/Header/BackGround.svg);
+    background-repeat: no-repeat;
+}
+header ul li{
+    padding-top: 16px;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    padding-inline: 70px;
+}
+header button{
+    background-image: url(/src/Icons/logo.svg);
+    display: inline-flex;
+    margin-inline: 25px;
+    width: 72px;
+    height: 60px;
+}
+
+/* Footer */
+.Footer{
+    margin-top: 171px;
+    height: 136px;
+    max-width: 1920px;
+    background-image: url(/src/Image/Footer/BackGround.svg);
+}
+.Footer-1{
+    padding-top: 37px;
+    padding-left: 123px;
+    padding-right: 163px;   
+    display: flex;
+    justify-content: space-between
+}
+.Footer-3{
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+}
+.vk{
+    background-image: url(/src/Icons/vk.svg);
+    width: 68px;
+    height: 44px;
+}
+.dzen{
+    background-image: url(/src/Icons/dzen.svg);
+    width: 59px;
+    height: 56px;
+}
+.tg{
+    background-image: url(/src/Icons/tg.svg);
+    width: 64px;
+    height: 53px;
+}
+.logo2{
+    background-image: url(/src/Icons/logo2.svg);
+    width: 340px;
+    height: 72px;
+}
+.btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* All settings */
+body, html{
+    font-family: Montserrat;
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+button:active {
+    transform: scale(0.95);
+}
+h1{
+    font-family: Inter;
+    font-size: 60px;
+    color: #57270E;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+p{
+    font-family: Montserrat;
+    font-size: 28px;
+}
+
+/* Header */
+header{
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-between;
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 42px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+header ul{
+    height: 69px;
+    display: inline-flex;
+    list-style: none;
+    margin: 0px;
+    padding-inline: 84px;
+    background-image: url(/src/Image/Header/BackGround.svg);
+    background-repeat: no-repeat;
+}
+header ul li{
+    padding-top: 16px;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    padding-inline: 70px;
+}
+header button{
+    background-image: url(/src/Icons/logo.svg);
+    display: inline-flex;
+    margin-inline: 25px;
+    width: 72px;
+    height: 60px;
+}
+
+/* Page 1 */
+.Page--1{
+    margin-top: -110px;
+    background-image: url(/src/Image/structure/Page1/BackGround.svg);
+    height: 1386px;
+}
+.Page--1 h1{
+    padding-top: 205px;
+    width: 334px;
+}
+.Hero--1{
+    display: flex;
+    justify-self: center;
+    padding-top: 23px;
+}
+.Hero--1--2{
+    padding-top: 80px;
+    padding-left: 24px;
+}
+.Hero--1--1 div{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/src/Image/structure/Page1/BackGroundInfo2.svg);
+    width: 601px;
+    height: 251px;
+}
+.Hero--1--1 p{
+    padding-top: 21px;
+    height: 170px;
+    width: 503px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Hero--1--2 div{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/src/Image/structure/Page1/BackGroundInfo1.svg);
+    width: 591px;
+    height: 222px;
+}
+.Hero--1--2 p{
+    padding-top: 21px;
+    margin-inline: auto;
+    height: 170px;
+    width: 538px;
+}
+.Hero--1--2 img{
+    padding-top: 103px;
+}
+
+/* Page 2 */
+.Page--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-image: url(/src/Image/structure/Page2/BackGround.svg);
+    height: 1085px;
+}
+
+.Hero--2 {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.Hero--2 p {
+    padding-left: 100px;
+    width: 558px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.carusel {
+    position: relative;
+    width: 951px;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carusel img {
+    width: 951px;
+    height: 560px;
+    object-fit: cover;
+    display: block;
+}
+
+.carusel .btn {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.carusel .left {
+    background-image: url(/src/Image/structure/Page2/Left.svg);
+    left: -70px; /* чуть левее от картинки */
+}
+
+.carusel .right {
+    background-image: url(/src/Image/structure/Page2/Right.svg);
+    right: -70px; /* чуть правее от картинки */
+}
+
+
+/* Page 3 */
+.Page--3{
+    height: 1061px;
+    background-image: url(/src/Image/structure/Page3/BackGround.svg);
+    background-repeat: no-repeat;
+}
+.Page--3 h1{
+    padding-top: 134px;
+    display: flex;
+    justify-content: center;
+}
+.Hero--3{
+    margin-left: 1044px;
+
+    margin-top: 245PX;
+    background-image: url(/src/Image/structure/Page3/BackGroundInfo.svg);
+    width: 631px;
+    height: 261px;
+
+}
+.Hero--3 p{
+    padding-top: 26px;
+    display: flex;
+    justify-self: center;
+    width: 564px;
+    height: 204px;
+}
+
+/* Footer */
+.Footer{
+    margin-top: 144px;
+    height: 136px;
+    max-width: 1920px;
+    background-image: url(/src/Image/Footer/BackGround.svg);
+    background-repeat: no-repeat;
+}
+.Footer-1{
+    padding-top: 37px;
+    padding-left: 123px;
+    padding-right: 163px;
+    display: flex;
+    justify-content: space-between
+}
+.Footer-3{
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+}
+.vk{
+    background-image: url(/src/Icons/vk.svg);
+    width: 68px;
+    height: 44px;
+}
+.dzen{
+    background-image: url(/src/Icons/dzen.svg);
+    width: 59px;
+    height: 56px;
+}
+.tg{
+    background-image: url(/src/Icons/tg.svg);
+    width: 64px;
+    height: 53px;
+}
+.logo2{
+    background-image: url(/src/Icons/logo2.svg);
+    width: 340px;
+    height: 72px;
+}
+.btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.btn:hover {
+    opacity: 0.8;
+}
