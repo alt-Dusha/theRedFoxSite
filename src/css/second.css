@@ -71,7 +71,7 @@ header button{
 .Page--1{
     margin-top: -110px;
     background-image: url(/src/Image/structure/Page1/BackGround.svg);
-    height: 1386px;
+    height: 2226px;
 }
 .Page--1 h1{
     padding-top: 205px;
@@ -80,14 +80,14 @@ header button{
 .Hero--1{
     display: flex;
     justify-self: center;
-    padding-top: 23px;
+    padding-top: 214px;
 }
 .Hero--1--2{
     padding-top: 80px;
     padding-left: 24px;
 }
 .Hero--1--1 div{
-    margin-top: 80px;
+    margin-top: 587px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(/src/Image/structure/Page1/BackGroundInfo2.svg);
@@ -115,7 +115,7 @@ header button{
     width: 538px;
 }
 .Hero--1--2 img{
-    padding-top: 103px;
+    padding-top: 612px;
 }
 
 /* Page 2 */

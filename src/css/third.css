@@ -36,6 +36,12 @@ h2{
     padding: 0px;
     margin: 0px;
 }
+.hitler{
+    display: inline-flex;
+}
+
+
+
 
 /* Page 1 */
 .Page--1{
@@ -49,7 +55,7 @@ h2{
 .Hero--1--content {
     display: flex;
     align-items: center;
-    gap: 158px;
+    gap: 80px;
     margin-top: 80px;
     margin-inline: 58px;
 }
@@ -126,7 +132,7 @@ h2{
     background-image: url(/src/Image/structure/Page2/Right.svg);
     width: 62px;
     height: 62px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .Row{
     margin-top: 20px;

@@ -12,7 +12,7 @@
                 <button onclick="window.location.href=' index.html'"
                 class="btn" src="src/Icons/logo.svg"></button>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Лисица">Wiki</a></li>
                     <li><a href="structure.html">Строение</a></li>
                     <li><a href="friends.html">Друзья и враги</a></li>
                 </ul>
@@ -27,7 +27,11 @@
                     К ним относятся: волки, медведи и рыси
                 </p>
             </div>
-            <img id="carusel-1" src="src/Image/friends/Page1/art2.svg">
+            <div class="hitler">
+                <button class="left btn"></button>
+                    <img src="src/Image/friends/Page1/art1.svg">
+                <button class="right btn"></button>
+            </div>
         </div>
     </div>
 </div>
@@ -120,6 +124,7 @@
             </div>
         </div>
     </div>
+
     <div class="Footer">
         <div class="Footer-1">
             <button onclick="window.location.href=' https://www.vhutein.ru/'" class="btn logo2"></button>
@@ -130,23 +135,34 @@
             </div>
         </div>
     </div>
+    <script>
+  (function() {
+    const hitlerBlock = document.querySelector('.hitler');
+    const image = hitlerBlock.querySelector('img');
+    const leftBtn = hitlerBlock.querySelector('.left');
+    const rightBtn = hitlerBlock.querySelector('.right');
 
-<script>
-    const images = [
-        'src/Image/friends/Page1/art1.svg',
-        'src/Image/friends/Page1/art2.svg',
-        'src/Image/friends/Page1/art3.svg'
-    ];
+    let currentIndex = 1;
+    const maxIndex = 3;
 
-    let currentIndex = 1; // начинается с art2
+    function updateImage() {
+      image.src = `src/Image/friends/Page1/art${currentIndex}.svg`;
+    }
 
-    const imgElement = document.getElementById('carusel-1');
-
-    imgElement.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        imgElement.src = images[currentIndex];
+    leftBtn.addEventListener('click', () => {
+      currentIndex--;
+      if (currentIndex < 1) currentIndex = maxIndex;
+      updateImage();
     });
+
+    rightBtn.addEventListener('click', () => {
+      currentIndex++;
+      if (currentIndex > maxIndex) currentIndex = 1;
+      updateImage();
+    });
+  })();
 </script>
+
 <script>
     const carousels = [
         {
@@ -169,7 +185,6 @@
         }
     ];
 
-    // Находим все блоки .Row
     const rows = document.querySelectorAll('.Row');
 
     rows.forEach((row, i) => {
