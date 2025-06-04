@@ -9,14 +9,13 @@
 </head>
 <body>
     <header>
-                <button onclick="window.location.href=' index.html'"
-                class="btn" src="src/Icons/logo.svg"></button>
+                <button onclick="window.location.href=' index.html'" class="head-button" src="src/Icons/logo.svg"></button>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <button id="scroll-down-btn-1" class="btn-1">Ареал</button>
                     <li><a href="structure.html">Строение</a></li>
                     <li><a href="friends.html">Друзья и враги</a></li>
                 </ul>
-    </header>
+        </header>
 
     <div class="Page--1">
         <h1>Строение</h1>
@@ -98,6 +97,15 @@
         currentIndex = (currentIndex + 1) % slides.length;
         updateSlide(currentIndex);
     });
+</script>
+<script>
+document.getElementById('scroll-down-btn-1').addEventListener('click', () => {
+    window.scrollBy({
+        top: 2000,
+        left: 0,
+        behavior: 'smooth' // плавная прокрутка
+    });
+});
 </script>
 </body>
 </html>

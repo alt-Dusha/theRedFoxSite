@@ -25,11 +25,33 @@ h1{
     margin-right: auto;
     width: fit-content;
 }
+.head-button{
+    margin-left: 40px;
+    background-image: url(/src/Icons/logo.svg);
+    display: inline-flex;
+    width: 72px;
+    height: 60px;
+    background-color: transparent;
+    border: 0px;
+}
+.btn-1{
+    padding-inline: 0px;
+    width: 200px;
+    padding-bottom: 6px;
+    font-family: Montserrat;
+    background-image: none;
+    font-size: 28px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
 p{
     font-family: Montserrat;
     font-size: 28px;
 }
-
 /* Header */
 header{
     font-family: Montserrat;
@@ -38,18 +60,21 @@ header{
     font-size: 27px;
     font-weight: 400;
     margin-top: 42px;
+    margin-right: 300px;
     position: sticky;
     top: 0px;
     z-index: 1;
+    width: 1920px;
 }
 header ul{
     height: 69px;
     display: inline-flex;
     list-style: none;
     margin: 0px;
-    padding-inline: 84px;
+    padding-inline-end: 100px;
     background-image: url(/src/Image/Header/BackGround.svg);
     background-repeat: no-repeat;
+    width: 900px;
 }
 header ul li{
     padding-top: 16px;

@@ -11,10 +11,9 @@
     <body>
         <!-- Header -->
         <header>
-                <button onclick="window.location.href=' index.html'"
-                class="btn" src="src/Icons/logo.svg"></button>
+                <button onclick="window.location.href=' index.html'" class="head-button" src="src/Icons/logo.svg"></button>
                 <ul>
-                    <button id="scroll-down-btn" class="">Ареал</button>
+                    <button id="scroll-down-btn-1" class="btn-1">Ареал</button>
                     <li><a href="structure.html">Строение</a></li>
                     <li><a href="friends.html">Друзья и враги</a></li>
                 </ul>
@@ -96,6 +95,15 @@
 document.getElementById('scroll-down-btn').addEventListener('click', () => {
     window.scrollBy({
         top: 900,
+        left: 0,
+        behavior: 'smooth' // плавная прокрутка
+    });
+});
+</script>
+<script>
+document.getElementById('scroll-down-btn-1').addEventListener('click', () => {
+    window.scrollBy({
+        top: 2000,
         left: 0,
         behavior: 'smooth' // плавная прокрутка
     });
