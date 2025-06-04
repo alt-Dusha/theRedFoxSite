@@ -142,7 +142,7 @@ h1{
 .H1{
     display: inline-block;
     position: absolute;
-    margin-left: 197px;  
+    margin-left: 100px;  
     width: 464px;
     height: 601px;
 }
@@ -153,6 +153,9 @@ h1{
     background-image: url(/src/Image/Page2/BackgroundInfo.svg);
     background-repeat: no-repeat;
     height: 259px;
+}
+.H:not(.x){
+    margin-top: 80px;
 }
 .x{
     margin-top: 83px;
